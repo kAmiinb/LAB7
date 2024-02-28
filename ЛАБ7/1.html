@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для введення даних студента</title>
+    <link rel="stylesheet" href="sr.css">
+</head>
+<body>
+    <h2>Введіть дані студента</h2>
+    <form action="/submit" method="post">
+        <label for="surname">Прізвище:</label><br>
+        <input type="text" id="surname" placeholder="Прізвище" name="surname"><br>
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" placeholder="Ім'я" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" placeholder="+380(**) *** ** **" name="phone"><br><br>
+        <label for="date">Дата народження:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="gender">Стать:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Інше</option>
+        </select><br><br>
+        <label for="country">Країна:</label><br>
+        <input type="text" id="country" name="country"><br><br>
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
